@@ -45,4 +45,61 @@
 //   )
 
 //   console.log("Barcha fayllar yaratildi!")
-// })
+// }) 
+
+
+// 1-masala 
+
+// function add(a, b) {
+//   return a + b;
+// }
+
+// function subtract(a, b) {
+//   return a - b;
+// }
+
+// function printResult(result) {
+//   console.log("Natija:", result);
+// }
+
+// module.exports = {
+//   add,
+//   subtract,
+//   printResult 
+// };
+ 
+// app.js
+
+// const math = require("./mathModule");
+
+// const sum = math.add(5, 3);
+// math.printResult(sum);
+
+// const minus = math.subtract(10, 4);
+// math.printResult(minus); 
+
+// 2-masala  
+
+// const fs = require("fs");
+
+// fs.writeFileSync("test.txt", "Salom, dunyo!");
+
+// const data = fs.readFileSync("test.txt", "utf-8");
+
+// console.log("Fayldan o'qildi:", data); 
+
+// 3-masala  
+
+// const fs = require("fs");
+
+// let arr = Array.from({ length: 10 }, () => Math.floor(Math.random() * 100));
+
+// console.log("Array:", arr);
+
+// const buffer = Buffer.from(arr.join(" "), "utf-8");
+
+// fs.writeFileSync("buffer.txt", buffer);
+
+// const readBuffer = fs.readFileSync("buffer.txt");
+
+// console.log("Bufferdan o'qildi:", readBuffer.toString());
